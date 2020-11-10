@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+<title>Ubercj's mock Google</title>
+<style>
+    nav {
+        width: 100%;
+        font-size: 13px;
+        font-family: arial, sans-serif;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    li {
+display: inline-block;
+text-align: center;
+width: 50px;
+padding: 0px 15px;
+    }
+    #left-header {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    #right-header {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    #left-footer {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    #right-footer {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+    .the-google {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    .the-searchbar {
+        display: flex;
+        justify-content: center;
+        margin-top: -30px;
+    }
+    #searchbar {
+        width: 440px;
+        height: 30px;
+    }
+    .the-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    button {
+        width: 150px;
+        height: 30px;
+        margin: 20px 5px;
+        font-size: 13px;
+        font-family: arial, sans-serif;
+    }
+.logo {
+    width: 300px;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul id="left-header">
+            <li><a href "#">About</a></li>
+            <li><a href "#">Store</a></li>
+        </ul>
+        <ul id="right-header">
+            <li><a href "#">Gmail</a></li>
+            <li class="right-side"><a href "#">Images</a></li>
+        </ul>
+    </nav>
+    <div>
+        <div class="the-google">
+            <img class="logo" src="https://cdn.vox-cdn.com/thumbor/8tLchaDMIEDNzUD3mYQ7v1ZQL84=/0x0:2012x1341/920x613/filters:focal(0x0:2012x1341):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg" alt="Google logo">
+        </div>
+        <div class="the-searchbar">
+            <input id="searchbar" type="text">
+        </div>
+        <div class="the-buttons">
+            <button id="push-search">Google Search</button>
+            <button id="feeling-lucky">I'm Feeling Lucky</button>
+        </div>
+    </div>
+    <nav class="footer">
+        <ul id="left-footer">
+            <li><a href "#">Advertising</a></li>
+            <li><a href "#">Business</a></li>
+            <li style="width:125px"><a href "#">How Search Works</a></li>
+        </ul>
+        <ul id="right-footer">
+            <li><a href "#">Privacy</a></li>
+            <li><a href "#">Terms</a></li>
+            <li><a href "#">Settings</a></li>
+        </ul>
+    </nav>
+</body>
