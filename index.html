@@ -2,40 +2,72 @@
 <head>
 <title>Ubercj's mock Google</title>
 <style>
+    body{
+       width: 1265px;
+    }
     nav {
+        display: block;
         width: 100%;
-        font-size: 13px;
+        color: black;
         font-family: arial, sans-serif;
     }
+    nav.header {
+        font-size: 13px;
+        opacity: 75%;
+        left: 0px;
+        right: 0px;
+    }
+    nav.footer {
+        font-size: 14px;
+        color: #70757a;
+        background-color: #f2f2f2;
+        height: 40px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        border-top: 1px solid #dadce0;
+    }
     a {
-        color: black;
         text-decoration: none;
+        color: inherit;
+    }
+    a:hover {
+        text-decoration: underline;
     }
     li {
-display: inline-block;
-text-align: center;
-width: 50px;
-padding: 0px 15px;
+        display: inline-block;
+        text-align: center;
+        width: 50px;
+        padding: 0px 0px 0px 15px;
     }
     #left-header {
         position: absolute;
         left: 0px;
-        top: 0px;
+        top: 10px;
     }
     #right-header {
         position: absolute;
         right: 0px;
-        top: 0px;
+        top: 10px;
+        padding-right: 15px;
     }
     #left-footer {
         position: absolute;
         left: 0px;
         bottom: 0px;
+        padding-right: 15px;
     }
     #right-footer {
         position: absolute;
         right: 0px;
         bottom: 0px;
+        padding-right: 15px;
+    }
+    #login {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
     }
     .the-google {
         display: flex;
@@ -50,6 +82,8 @@ padding: 0px 15px;
     #searchbar {
         width: 440px;
         height: 30px;
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
     }
     .the-buttons {
         display: flex;
@@ -62,14 +96,21 @@ padding: 0px 15px;
         margin: 20px 5px;
         font-size: 13px;
         font-family: arial, sans-serif;
+        background-color: #f8f9fa;
+        border: 1px solid #e7e9ee;
+        border-radius: 4px;
     }
-.logo {
-    width: 300px;
-}
+    button:hover {
+        border: 1px solid #cbcdd1;
+        cursor: pointer;
+    }
+    .logo {
+        width: 300px;
+    }
 </style>
 </head>
 <body>
-    <nav>
+    <nav class="header">
         <ul id="left-header">
             <li><a href "#">About</a></li>
             <li><a href "#">Store</a></li>
@@ -77,6 +118,7 @@ padding: 0px 15px;
         <ul id="right-header">
             <li><a href "#">Gmail</a></li>
             <li class="right-side"><a href "#">Images</a></li>
+            <li><img id="login" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Jelly_cc11.jpg"></li>
         </ul>
     </nav>
     <div>
@@ -93,14 +135,14 @@ padding: 0px 15px;
     </div>
     <nav class="footer">
         <ul id="left-footer">
-            <li><a href "#">Advertising</a></li>
-            <li><a href "#">Business</a></li>
+            <li style="padding-right:20px"><a href "#">Advertising</a></li>
+            <li style="padding-right:5px"><a href "#">Business</a></li>
             <li style="width:125px"><a href "#">How Search Works</a></li>
         </ul>
         <ul id="right-footer">
             <li><a href "#">Privacy</a></li>
             <li><a href "#">Terms</a></li>
             <li><a href "#">Settings</a></li>
-        </ul>
+         </ul>
     </nav>
 </body>
